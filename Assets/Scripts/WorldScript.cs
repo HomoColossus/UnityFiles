@@ -38,7 +38,7 @@ public class WorldScript : MonoBehaviour {
 
 
         // Spawns human
-        human = Instantiate (Resources.Load("Prefabs/human", typeof(GameObject))) as GameObject;
+        human = Instantiate (Resources.Load("Prefabs/human 1", typeof(GameObject))) as GameObject;
         //print ("human position from WorldScript: " +human.transform.position);
     }
 	
@@ -81,7 +81,7 @@ public class WorldScript : MonoBehaviour {
     {
         // Denna food transform är fel
         currentTarget = food;
-        human.GetComponent<Human>().SetTargetPosition(food.GetComponent<Food>().GetFoodPosition());
+        human.GetComponent<RealHuman>().SetTargetPosition(food.GetComponent<Food>().GetFoodPosition());
     }
 
 
@@ -91,7 +91,7 @@ public class WorldScript : MonoBehaviour {
         print ("food destroyed");
 
 //        human.GetComponent<Human>().ScaleHandle(GetSliderValue());
-        human.GetComponent<Human>().scalerValue = GetSliderValue();
+		human.GetComponent<RealHuman>().scalerValue = GetSliderValue();
 
 
     }

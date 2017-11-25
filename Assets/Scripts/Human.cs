@@ -28,6 +28,10 @@ public class Human : MonoBehaviour {
     bool haveTarget;
 
 
+    // OnClick display
+    public GameObject onClickDisplay;
+
+
 
     void Start ()
     {
@@ -68,6 +72,22 @@ public class Human : MonoBehaviour {
 
     }
 */
+    void OnTouchDown ()
+    {
+
+
+        print("human touch down");
+        if (onClickDisplay)
+        {
+            // Already instantiated, do nothing.
+        }
+        else 
+        {
+            onClickDisplay = Instantiate (Resources.Load("Prefabs/planeOnClick", typeof(GameObject))) as GameObject;
+            onClickDisplay.transform.position = new Vector3(6.43f, 3.65f, -0.27f);
+        }
+    }
+
 
 
     public void SetTargetPosition (GameObject foodTarget)

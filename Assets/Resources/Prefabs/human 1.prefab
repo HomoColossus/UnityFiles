@@ -1568,6 +1568,7 @@ GameObject:
   - component: {fileID: 95130498277042220}
   - component: {fileID: 114746599754567248}
   - component: {fileID: 114471820536265878}
+  - component: {fileID: 136036302125977142}
   m_Layer: 0
   m_Name: human 1
   m_TagString: Untagged
@@ -5121,7 +5122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1555539568481258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.6358366, y: -4.6011048e-17, z: 2.0721533}
+  m_LocalPosition: {x: -4.425807, y: -1.5694864, z: -5.3428555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4364595648216706}
@@ -6206,6 +6207,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalerValue: 0
+--- !u!136 &136036302125977142
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1555539568481258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.95
+  m_Height: 6.48
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.93, z: 0}
 --- !u!137 &137489818331707284
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

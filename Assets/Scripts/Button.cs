@@ -28,7 +28,6 @@ public class Button : MonoBehaviour {
 
         WorldScript.GetComponent<WorldScript>().RecieveFoodGO(food);
 
-
     }
 
 

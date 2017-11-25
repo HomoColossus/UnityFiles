@@ -62,7 +62,7 @@ public class TouchInput : MonoBehaviour {
 
                 if (Input.GetMouseButton(0)) // if mousebutton 0 is being held down
                 {
-                    recipient.SendMessage("OnTouchtay", hit.point, SendMessageOptions.DontRequireReceiver); 
+                    recipient.SendMessage("OnTouchStay", hit.point, SendMessageOptions.DontRequireReceiver); 
                 }
             }
            

@@ -38,6 +38,13 @@ public class Food : MonoBehaviour {
     }
 
 
+    public GameObject GetFoodGO ()
+    {
+        //print("returning GameObject food");
+        return this.gameObject;
+    }
+
+
 
 
 
